@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="pritam.com.homework04.MainActivity" android:orientation="vertical" android:weightSum="7">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_weight="1" android:background="@android:color/black"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/playerView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recycler_view" android:layout_weight="6" android:orientation="horizontal" android:weightSum="7"
+        android:visibility="invisible">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:src="@android:drawable/ic_media_pause" android:layout_weight="6"
+            android:id="@+id/playerButton" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:id="@+id/playBar" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:theme="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

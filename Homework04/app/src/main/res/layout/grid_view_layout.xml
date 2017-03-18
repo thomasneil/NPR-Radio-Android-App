@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="100dp">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Large Text"
+        android:id="@+id/gridTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/gridChannnelImage"
+
+        android:layout_above="@+id/gridTitle"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridPlayButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_media_play"/>
+
+</RelativeLayout>

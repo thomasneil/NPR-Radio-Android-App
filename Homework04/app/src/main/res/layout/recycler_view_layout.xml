@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/channel_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/podcast_name"
+            android:layout_alignBottom="@+id/play_button"
+            android:layout_alignParentTop="true" android:padding="5dp"
+            android:layout_toLeftOf="@+id/podcast_name" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/podcast_name" android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/play_button"
+            android:layout_alignStart="@+id/play_button" android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/posted_date"
+            android:layout_above="@+id/podcast_date"
+            android:layout_toRightOf="@+id/channel_img"
+            android:layout_toEndOf="@+id/channel_img"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+    <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/play_button" android:background="@android:drawable/ic_media_play"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:layout_below="@+id/podcast_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/podcast_date" android:text="@string/Play"
+                android:layout_alignTop="@+id/play_button"
+                android:layout_toRightOf="@+id/play_button"
+                android:layout_toEndOf="@+id/play_button" />
+
+
+</RelativeLayout>
